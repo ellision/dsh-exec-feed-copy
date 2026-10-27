@@ -1,0 +1,26 @@
+{
+  "name": "dsh-exec-feed-copy",
+  "version": "0.1.0",
+  "description": "执行稿分段合并复制：点击分段 text 块的复制按钮时，自动复制「总控提示词 + 换行 + 分段提示词」。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "dsh": {
+    "displayName": "执行稿合并复制",
+    "description": "分段 text 块一键复制 总控+分段，免两次复制拼接。",
+    "engines": {
+      "dsh": ">=0.2.0"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

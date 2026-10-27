@@ -1,0 +1,8 @@
+# Bundle patch for dsh-exec-feed-copy.
+#
+# The single row mounts the bundle as a host plugin (name resolved through the
+# profile's node_modules); the browser half joins the client module graph
+# automatically via the package's `dsh.client` declaration.
+- insert:
+    - id: exec-feed-copy
+      name: dsh-exec-feed-copy
